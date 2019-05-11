@@ -1,0 +1,59 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Aries1A" />
+  <meta property="og:url" content="https://aries1a.github.io" />
+  <meta property="og:title" content="Captiongram" />
+  <meta property="og:description" content="instagramに載せる写真の撮影情報を自動で生成するWebサービス" />
+  <meta property="og:image" content="https://i.gyazo.com/ed654677dad2cf3a79386820f78e1418.png" />
+
+  <title>Captiongram</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- BootstrapのJS読み込み -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="copytext.js"></script>
+  <script src="getexif.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 href="https://fontmeme.com/ja/font-instagram/"><img src="https://fontmeme.com/permalink/190506/2b67695508f5efbe34f5021190472b15.png" alt="font-instagram" border="0" width="40%"></h1>
+      <div class="previewarea">
+        <img id="preview" />
+      </div>
+      <div class="center">
+        <!--textExifに写真のExifを入れる  -->
+        <label>
+          <span class="btn btn-primary btn-lg">
+            写真を選択
+            <input type="file" style="display:none" id="file-input" accept="image/*">
+          </span>
+        </label>
+        <button class="btn btn-success btn-lg" type="button" id="caption" disabled>
+          キャプションを表示
+        </button>
+        <button class="btn btn-default btn-lg" type="button" onclick="copyToClipboard()" id="copyClipboard" disabled>
+          クリップボードにコピー
+        </button>
+      </div>
+
+
+      <textarea placeholder="写真を選択するとここに撮影情報が表示されます。" rows=10 class="form-control" id="textExif"></textarea>
+      <!-- <form name="form1">
+        <input type="checkbox" name="fruits" value="りんご">りんご<br>
+        <input type="checkbox" name="fruits" value="バナナ">バナナ<br>
+        <input type="checkbox" name="fruits" value="オレンジ">オレンジ<br>
+        <input type="button" value="選択" onclick="myCheck();">
+      </form> -->
+    </div>
+  </div>
+</body>
+
+</html>
