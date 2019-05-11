@@ -1,0 +1,50 @@
+h1 {
+  /* border-bottom: solid 3px skyblue;
+  position: relative;*/
+  text-align: center;
+}
+
+h1:after {
+  /* position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 50%; */
+}
+
+.jumbotron{
+  /* background:#fff; */
+  background:rgba(255, 0, 0, 0);
+}
+
+.container{
+  width: 95%;
+
+
+}
+
+body {
+  background-image: linear-gradient(-90deg, #FF52E8, #FFDC52);
+}
+
+#preview{
+  width: 60%;
+}
+
+.previewarea{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.center{
+  text-align: center;
+}
+
+#textExif{
+  margin-bottom: 0.5rem;
+  margin-left: 20%;
+  width: 60%;
+  background:rgba(255, 255, 255, 0.8);
+
+}
