@@ -1,0 +1,13 @@
+/* Lengthcheck */
+#Lengthcheck+label {
+  background-color: #eee;
+}
+#Lengthcheck+label::before {
+  color: #aaa;
+}
+#Lengthcheck:checked+label {
+  background-color: #3498db;
+}
+#Lengthcheck:checked+label::before {
+  color: #fff;
+}

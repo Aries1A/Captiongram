@@ -29,7 +29,8 @@ body {
 }
 
 #preview{
-  width: 60%;
+  /* width: 20%; */
+  /* ImageHeight: 2rem; */
 }
 
 .previewarea{
@@ -43,8 +44,8 @@ body {
 
 #textExif{
   margin-bottom: 0.5rem;
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 0%;
+  width: 100%;
   background:rgba(255, 255, 255, 0.8);
 
 }

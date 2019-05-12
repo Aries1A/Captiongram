@@ -501,25 +501,33 @@ $(function() {
       // EXIF.getTag(this, "[exifのタグ名]")で、値を取得
       try{
       const Date = DateTimeOriginal.substr(0, 4) + '/' + DateTimeOriginal.substr(5, 2) + '/' + DateTimeOriginal.substr(8, 2);
-      result += '--\r\n';
+      // result += '--\r\n';
+      if ($('#Datecheck').is(':checked')) {
       result += 'Date: ' + Date;
-      result += '\r\n';
+      result += '\r\n';}
+      if ($('#Cameracheck').is(':checked')) {
       result += 'Camera: ' + EXIF.getTag(this, "Model");
-      result += '\r\n';
+      result += '\r\n';}
+      if ($('#Lenscheck').is(':checked')) {
       result += 'Lens: ' + EXIF.getTag(this, "LensModel");
-      result += '\r\n\r\n';
-      result += EXIF.getTag(this, "FocalLengthIn35mmFilm") + 'mm';
-      result += ' f/' + EXIF.getTag(this, "FNumber");
+      result += '\r\n';}
+      if ($('#Lengthcheck').is(':checked')) {
+      result += EXIF.getTag(this, "FocalLengthIn35mmFilm") + 'mm ';}
+      if ($('#FNumbercheck').is(':checked')) {
+      result += 'f/' + EXIF.getTag(this, "FNumber") + ' ';}
+      if ($('#Timecheck').is(':checked')) {
       let second = 0;
       if (EXIF.getTag(this, "ExposureTime") < 1) {
         second = 1 / EXIF.getTag(this, "ExposureTime");
-        result += ' 1/' + second + 's';
+        result += '1/' + second + 's ';
       }else {
         second = EXIF.getTag(this, "ExposureTime");
-        result += ' ' + second + 's';
-      }
-      result += ' ISO' + EXIF.getTag(this, "ISOSpeedRatings");
-      result += '\r\n--\r\n';
+        result += '' + second + 's ';
+      }}
+      if ($('#ISOcheck').is(':checked')) {
+      result += 'ISO' + EXIF.getTag(this, "ISOSpeedRatings")+' ';
+    }
+    result += '\r\n';
     } catch(error){
       result += "撮影情報がありません"
     }
