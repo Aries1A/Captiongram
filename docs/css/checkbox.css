@@ -5,13 +5,15 @@ input {
 input+label,
 input+label::before,
 input+label::after {
+   /* width:20%; */
+   /* height:50px; */
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 input+label {
   display: inline-block;
   position: relative;
-  width: 100px;
+  width: 135px;
   height: 48px;
   border-radius: 24px;
   cursor: pointer;
@@ -21,7 +23,7 @@ input+label::before {
   content: attr(data-off-label);
   position: absolute;
   top: 14px;
-  right: 7px;
+  right: 20px;
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 18px;
@@ -43,23 +45,8 @@ input:checked+label::before {
   color: #fff;
 }
 input:checked+label::after {
-  left: 54px;
+  left: 90px;
   background-color: #f7f7f7;
-}
-
-
-/* Datecheck */
-#Datecheck+label {
-  background-color: #eee;
-}
-#Datecheck+label::before {
-  color: #aaa;
-}
-#Datecheck:checked+label {
-  background-color: #3498db;
-}
-#Datecheck:checked+label::before {
-  color: #fff;
 }
 
 /* checkAll */
@@ -70,9 +57,23 @@ input:checked+label::after {
   color: #aaa;
 }
 #checkAll:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #checkAll:checked+label::before {
+  color: #fff;
+}
+
+/* Datecheck */
+#Datecheck+label {
+  background-color: #eee;
+}
+#Datecheck+label::before {
+  color: #aaa;
+}
+#Datecheck:checked+label {
+  background-color: #FF584C;
+}
+#Datecheck:checked+label::before {
   color: #fff;
 }
 
@@ -84,7 +85,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #Cameracheck:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #Cameracheck:checked+label::before {
   color: #fff;
@@ -98,7 +99,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #Lenscheck:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #Lenscheck:checked+label::before {
   color: #fff;
@@ -112,7 +113,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #Lengthcheck:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #Lengthcheck:checked+label::before {
   color: #fff;
@@ -127,7 +128,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #FNumbercheck:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #FNumbercheck:checked+label::before {
   color: #fff;
@@ -141,7 +142,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #Timecheck:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #Timecheck:checked+label::before {
   color: #fff;
@@ -155,7 +156,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #ISOcheck:checked+label {
-  background-color: #3498db;
+  background-color: #FF584C;
 }
 #ISOcheck:checked+label::before {
   color: #fff;

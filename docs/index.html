@@ -25,48 +25,43 @@
 
 <body>
   <div class="jumbotron">
-    <div class="container">
+    <div class="container" style="text-align: center;">
       <h1 href="https://fontmeme.com/ja/font-instagram/"><img src="https://fontmeme.com/permalink/190506/2b67695508f5efbe34f5021190472b15.png" alt="font-instagram" border="0" width="40%"></h1>
-      <!-- <label class="checkbox-inline"><input id="checkAll" type="checkbox" checked>全選択・全解除</label><br>
-        <label class="checkbox-inline"><input name="area[]" id="Datecheck" type="checkbox" checked>撮影日</label>
-        <label class="checkbox-inline"><input name="area[]" id="Cameracheck" type="checkbox" checked>カメラボディ</label>
-        <label class="checkbox-inline"><input name="area[]" id="Lenscheck" type="checkbox" checked>レンズ</label>
-        <label class="checkbox-inline"><input name="area[]" id="Lengthcheck" type="checkbox" checked>焦点距離</label>
-        <label class="checkbox-inline"><input name="area[]" id="Timecheck" type="checkbox" checked>露光時間</label>
-        <label class="checkbox-inline"><input name="area[]" id="FNumbercheck" type="checkbox" checked>F値</label>
-        <label class="checkbox-inline"><input name="area[]" id="ISOcheck" type="checkbox" checked>ISO</label><br> -->
+
       <div class="container">
-        <div class="row">
-          <div class="col-sm-2" style="background: rgba(255, 255, 255, 0.5)">
-            <input type="checkbox" id="checkAll" checked />
-            <label for="checkAll" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="Datecheck" name="area[]" checked />
-            <label for="Datecheck" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="Cameracheck" name="area[]" checked />
-            <label for="Cameracheck" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="Lenscheck" name="area[]" checked />
-            <label for="Lenscheck" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="Lengthcheck" name="area[]" checked />
-            <label for="Lengthcheck" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="Timecheck" name="area[]" checked />
-            <label for="Timecheck" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="FNumbercheck" name="area[]" checked />
-            <label for="FNumbercheck" data-on-label="On" data-off-label="Off"></label><br>
-            <input type="checkbox" id="ISOcheck" name="area[]" checked />
-            <label for="ISOcheck" data-on-label="On" data-off-label="Off"></label>
+        <!-- <div class="row"> -->
+        <!-- <div class="col-sm-2" style="background: rgba(255, 255, 255, 0.5)"> -->
+        <div class="check-group clearfix">
+          <input type="checkbox" id="checkAll" checked />
+          <label for="checkAll" data-on-label="All" data-off-label="All"></label>
+          <input type="checkbox" id="Datecheck" name="area[]" checked />
+          <label for="Datecheck" data-on-label="Date" data-off-label="Date"></label>
+          <input type="checkbox" id="Cameracheck" name="area[]" checked />
+          <label for="Cameracheck" data-on-label="Camera" data-off-label="Camera"></label>
+          <input type="checkbox" id="Lenscheck" name="area[]" checked />
+          <label for="Lenscheck" data-on-label="Lens" data-off-label="Lens"></label>
+          <input type="checkbox" id="Lengthcheck" name="area[]" checked />
+          <label for="Lengthcheck" data-on-label="Length" data-off-label="Length"></label>
+          <input type="checkbox" id="Timecheck" name="area[]" checked />
+          <label for="Timecheck" data-on-label="Time" data-off-label="Time"></label>
+          <input type="checkbox" id="FNumbercheck" name="area[]" checked />
+          <label for="FNumbercheck" data-on-label="F num" data-off-label="F num"></label>
+          <input type="checkbox" id="ISOcheck" name="area[]" checked />
+          <label for="ISOcheck" data-on-label="ISO" data-off-label="ISO"></label>
+        </div>
+
+        <!-- <div class="col-sm-9"> -->
+          <div class="previewarea">
+            <img id="preview" height="45%" />
           </div>
-          <div class="col-sm-9">
-            <div class="previewarea">
-              <img id="preview" height="45%"/>
-            </div>
-            <div class="center">
-              <!--textExifに写真のExifを入れる  -->
-              <label>
-                <span class="btn btn-primary btn-lg">
-                  写真を選択
-                  <input type="file" style="display:none" id="file-input" accept="image/*">
-                </span>
-              </label>
+          <div class="center">
+            <!--textExifに写真のExifを入れる  -->
+            <label>
+              <span class="btn btn-primary btn-lg">
+                写真を選択
+                <input type="file" style="display:none" id="file-input" accept="image/*">
+              </span>
+            </label>
             <button class="btn btn-success btn-lg" type="button" id="caption" disabled>
               キャプションを表示
             </button>
@@ -75,13 +70,13 @@
             </button>
 
           </div>
-            <textarea placeholder="写真を選択するとここに撮影情報が表示されます。" rows=10 class="form-control" id="textExif"></textarea>
-          </div>
+          <textarea placeholder="写真を選択するとここに撮影情報が表示されます。" rows=10 class="form-control" id="textExif"></textarea>
         </div>
-      </div>
-
+      <!-- </div> -->
     </div>
   </div>
+
+
 </body>
 
 </html>
