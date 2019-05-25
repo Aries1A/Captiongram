@@ -31,6 +31,12 @@
       <div class="container">
         <!-- <div class="row"> -->
         <!-- <div class="col-sm-2" style="background: rgba(255, 255, 255, 0.5)"> -->
+
+
+        <!-- <div class="col-sm-9"> -->
+        <div class="previewarea">
+          <img id="preview" width="80%" />
+        </div>
         <div class="check-group clearfix">
           <input type="checkbox" id="checkAll" checked />
           <label for="checkAll" data-on-label="All" data-off-label="All"></label>
@@ -49,29 +55,26 @@
           <input type="checkbox" id="ISOcheck" name="area[]" checked />
           <label for="ISOcheck" data-on-label="ISO" data-off-label="ISO"></label>
         </div>
+        <div class="center">
+          <!--textExifに写真のExifを入れる  -->
+          <label>
+            <span class="btn btn-primary btn-lg">
+              写真を選択
+              <input type="file" style="display:none" id="file-input" accept="image/*">
+            </span>
+          </label>
+          <button class="btn btn-success btn-lg" type="button" id="caption" disabled>
+            キャプションを表示
+          </button>
+          <button class="btn btn-default btn-lg" type="button" onclick="copyToClipboard()" id="copyClipboard" disabled>
+            クリップボードにコピー
+          </button>
 
-        <!-- <div class="col-sm-9"> -->
-          <div class="previewarea">
-            <img id="preview" height="45%" />
-          </div>
           <div class="center">
-            <!--textExifに写真のExifを入れる  -->
-            <label>
-              <span class="btn btn-primary btn-lg">
-                写真を選択
-                <input type="file" style="display:none" id="file-input" accept="image/*">
-              </span>
-            </label>
-            <button class="btn btn-success btn-lg" type="button" id="caption" disabled>
-              キャプションを表示
-            </button>
-            <button class="btn btn-default btn-lg" type="button" onclick="copyToClipboard()" id="copyClipboard" disabled>
-              クリップボードにコピー
-            </button>
-
+            <textarea placeholder="写真を選択するとここに撮影情報が表示されます。" rows=10 class="form-control" id="textExif"></textarea>
           </div>
-          <textarea placeholder="写真を選択するとここに撮影情報が表示されます。" rows=10 class="form-control" id="textExif"></textarea>
         </div>
+      </div>
       <!-- </div> -->
     </div>
   </div>
