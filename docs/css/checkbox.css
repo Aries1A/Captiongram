@@ -1,6 +1,6 @@
 /* common style */
 input {
-  display: none;
+  /* display: none; */
 }
 input+label,
 input+label::before,
@@ -57,7 +57,7 @@ input:checked+label::after {
   color: #aaa;
 }
 #checkAll:checked+label {
-  background-color: #FF584C;
+  background-color: #1e90ff;
 }
 #checkAll:checked+label::before {
   color: #fff;

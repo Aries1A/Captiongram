@@ -11,14 +11,16 @@
 
   <title>Captiongram</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <!-- BootstrapのCSS読み込み -->
   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- BootstrapのJS読み込み -->
   <script src="./bootstrap/js/bootstrap.min.js"></script>
-
   <script src="js/copytext.js"></script>
   <script src="js/getexif.js"></script>
   <script src="js/checkbox.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/jquery-cookie/src/jquery.cookie.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/checkbox.css">
 </head>
@@ -27,14 +29,16 @@
   <div class="jumbotron">
     <div class="container" style="text-align: center;">
       <h1 href="https://fontmeme.com/ja/font-instagram/"><img src="https://fontmeme.com/permalink/190506/2b67695508f5efbe34f5021190472b15.png" alt="font-instagram" border="0" width="40%"></h1>
+      <label><input type="checkbox" id="newtweetcheck" />tweetする</label>
 
-      <div class="container">
+
+      <div class="container" style="text-align: center;">
 
         <div class="previewarea">
           <div class="img_outer">
-          <img class="inner_photo" id="preview" width="80%" />
+            <img class="inner_photo" id="preview" width="80%" />
+          </div>
         </div>
-      </div>
 
         <div class="check-group clearfix">
           <input type="checkbox" id="checkAll" checked />
@@ -54,6 +58,7 @@
           <input type="checkbox" id="ISOcheck" name="area[]" checked />
           <label for="ISOcheck" data-on-label="ISO" data-off-label="ISO"></label>
         </div>
+
         <div class="center">
           <!--textExifに写真のExifを入れる  -->
           <label>
@@ -70,13 +75,17 @@
           </button>
 
           <div class="center">
-            <textarea placeholder="写真を選択するとここに撮影情報が表示されます。" rows=10 class="form-control" id="textExif"></textarea>
+            <div class="col-md-6">
+              <textarea placeholder="撮影情報１" rows=8 class="form-control textExif" id="textExif1"></textarea>
+            </div>
+            <div class="col-md-6">
+              <textarea placeholder="撮影情報２" rows=8 class="form-control textExif" id="textExif2"></textarea>
+            </div>
           </div>
         </div>
+        <!-- </div> -->
       </div>
-      <!-- </div> -->
     </div>
-  </div>
 
 
 </body>
