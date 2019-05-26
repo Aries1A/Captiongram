@@ -3,7 +3,7 @@ $(function() {
   $(document).on('click', '#Datecheck', function() {
     var Datechecked = $('#Datecheck').get(0).checked;
     console.log(Datechecked);
-    $.cookie('Datecheck', Datechecked, {
+    $.cookie('Datecheck', Datechecked, {
       expires: 730
     });
     console.log($.cookie('Datecheck'));
@@ -16,7 +16,7 @@ $(function() {
   $(document).on('click', '#Cameracheck', function() {
     var Camerachecked = $('#Cameracheck').get(0).checked;
     console.log(Camerachecked);
-    $.cookie('Cameracheck', Camerachecked, {
+    $.cookie('Cameracheck', Camerachecked, {
       expires: 730
     });
     console.log($.cookie('Cameracheck'));
@@ -29,7 +29,7 @@ $(function() {
   $(document).on('click', '#Lenscheck', function() {
     var Lenschecked = $('#Lenscheck').get(0).checked;
     console.log(Lenschecked);
-    $.cookie('Lenscheck', Lenschecked, {
+    $.cookie('Lenscheck', Lenschecked, {
       expires: 730
     });
     console.log($.cookie('Lenscheck'));
@@ -42,7 +42,7 @@ $(function() {
   $(document).on('click', '#Lengthcheck', function() {
     var Lengthchecked = $('#Lengthcheck').get(0).checked;
     console.log(Lengthchecked);
-    $.cookie('Lengthcheck', Lengthchecked, {
+    $.cookie('Lengthcheck', Lengthchecked, {
       expires: 730
     });
     console.log($.cookie('Lengthcheck'));
@@ -55,7 +55,7 @@ $(function() {
   $(document).on('click', '#Timecheck', function() {
     var Timechecked = $('#Timecheck').get(0).checked;
     console.log(Timechecked);
-    $.cookie('Timecheck', Timechecked, {
+    $.cookie('Timecheck', Timechecked, {
       expires: 730
     });
     console.log($.cookie('Timecheck'));
@@ -68,7 +68,7 @@ $(function() {
   $(document).on('click', '#FNumbercheck', function() {
     var FNumberchecked = $('#FNumbercheck').get(0).checked;
     console.log(FNumberchecked);
-    $.cookie('FNumbercheck', FNumberchecked, {
+    $.cookie('FNumbercheck', FNumberchecked, {
       expires: 730
     });
     console.log($.cookie('FNumbercheck'));
@@ -81,7 +81,7 @@ $(function() {
   $(document).on('click', '#ISOcheck', function() {
     var ISOchecked = $('#ISOcheck').get(0).checked;
     console.log(ISOchecked);
-    $.cookie('ISOcheck', ISOchecked, {
+    $.cookie('ISOcheck', ISOchecked, {
       expires: 730
     });
     console.log($.cookie('ISOcheck'));
