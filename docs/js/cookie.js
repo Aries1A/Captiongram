@@ -1,7 +1,32 @@
 $(function() {
   console.log($.cookie());
+
+  $(document).on('click', '#checkAll', function() {
+    let checkAll = $('#checkAll').get(0).checked;
+    console.log(checkAll);
+    $.cookie('Datecheck', checkAll, {
+      expires: 730
+    });
+    $.cookie('Cameracheck', checkAll, {
+      expires: 730
+    });
+    $.cookie('Lenscheck', checkAll, {
+      expires: 730
+    });
+    $.cookie('Timecheck', checkAll, {
+      expires: 730
+    });
+    $.cookie('FNumbercheck', checkAll, {
+      expires: 730
+    });
+    $.cookie('ISOcheck', checkAll, {
+      expires: 730
+    });
+    console.log($.cookie());
+  });
+
   $(document).on('click', '#Datecheck', function() {
-    var Datechecked = $('#Datecheck').get(0).checked;
+    let Datechecked = $('#Datecheck').get(0).checked;
     console.log(Datechecked);
     $.cookie('Datecheck', Datechecked, {
       expires: 730
@@ -14,7 +39,7 @@ $(function() {
   }
 
   $(document).on('click', '#Cameracheck', function() {
-    var Camerachecked = $('#Cameracheck').get(0).checked;
+    let Camerachecked = $('#Cameracheck').get(0).checked;
     console.log(Camerachecked);
     $.cookie('Cameracheck', Camerachecked, {
       expires: 730
@@ -27,7 +52,7 @@ $(function() {
   }
 
   $(document).on('click', '#Lenscheck', function() {
-    var Lenschecked = $('#Lenscheck').get(0).checked;
+    let Lenschecked = $('#Lenscheck').get(0).checked;
     console.log(Lenschecked);
     $.cookie('Lenscheck', Lenschecked, {
       expires: 730
@@ -40,7 +65,7 @@ $(function() {
   }
 
   $(document).on('click', '#Lengthcheck', function() {
-    var Lengthchecked = $('#Lengthcheck').get(0).checked;
+    let Lengthchecked = $('#Lengthcheck').get(0).checked;
     console.log(Lengthchecked);
     $.cookie('Lengthcheck', Lengthchecked, {
       expires: 730
@@ -53,7 +78,7 @@ $(function() {
   }
 
   $(document).on('click', '#Timecheck', function() {
-    var Timechecked = $('#Timecheck').get(0).checked;
+    let Timechecked = $('#Timecheck').get(0).checked;
     console.log(Timechecked);
     $.cookie('Timecheck', Timechecked, {
       expires: 730
@@ -66,7 +91,7 @@ $(function() {
   }
 
   $(document).on('click', '#FNumbercheck', function() {
-    var FNumberchecked = $('#FNumbercheck').get(0).checked;
+    let FNumberchecked = $('#FNumbercheck').get(0).checked;
     console.log(FNumberchecked);
     $.cookie('FNumbercheck', FNumberchecked, {
       expires: 730
@@ -79,7 +104,7 @@ $(function() {
   }
 
   $(document).on('click', '#ISOcheck', function() {
-    var ISOchecked = $('#ISOcheck').get(0).checked;
+    let ISOchecked = $('#ISOcheck').get(0).checked;
     console.log(ISOchecked);
     $.cookie('ISOcheck', ISOchecked, {
       expires: 730
