@@ -4,6 +4,9 @@ $(function() {
   $(document).on('click', '#checkAll', function() {
     let checkAll = $('#checkAll').get(0).checked;
     console.log(checkAll);
+    $.cookie('checkAll', checkAll, {
+      expires: 730
+    });
     $.cookie('Datecheck', checkAll, {
       expires: 730
     });
@@ -27,6 +30,11 @@ $(function() {
     });
     console.log($.cookie());
   });
+
+  const _checkAll = $.cookie('checkAll');
+  if (_checkAll == 'false') {
+    $('#checkAll').attr('checked', false);
+  }
 
   $(document).on('click', '#Datecheck', function() {
     let Datechecked = $('#Datecheck').get(0).checked;
