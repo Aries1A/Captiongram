@@ -1,6 +1,6 @@
 /* common style */
 input {
-  /* display: none; */
+  display: none;
 }
 input+label,
 input+label::before,
