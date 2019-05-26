@@ -1,4 +1,5 @@
 $(function() {
+  console.log($.cookie());
   $(document).on("click", "#Datecheck", function() {
     var Datechecked = $("#Datecheck").get(0).checked;
     console.log(Datechecked);
