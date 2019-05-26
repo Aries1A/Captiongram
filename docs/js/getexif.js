@@ -572,6 +572,7 @@ $(function() {
     $('#preview').attr('src', blobUrl);
     // ボタンを有効化
     $("#caption").prop("disabled", false);
-    $("#copyClipboard").prop("disabled", false);
+    $("#copyClipboard1").prop("disabled", false);
+    $("#copyClipboard2").prop("disabled", false);
   });
 });
