@@ -13,6 +13,9 @@ $(function() {
     $.cookie('Lenscheck', checkAll, {
       expires: 730
     });
+    $.cookie('Lengthcheck', checkAll, {
+      expires: 730
+    });
     $.cookie('Timecheck', checkAll, {
       expires: 730
     });
