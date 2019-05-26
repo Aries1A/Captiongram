@@ -9,8 +9,8 @@ $(document).on("click","#checkAll", function(){
 });
 //ページを読み込んだ時に#checkAllcheckの値を設定
      const _checkAll=$.cookie("checkAll");
-     if(_checkAll != "false"){
-     $("#checkAll").attr("checked",true);
+     if(_checkAll != "true"){
+     $("#checkAll").attr("checked",false);
      }
 
 });
