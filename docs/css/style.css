@@ -36,6 +36,7 @@ body {
 .previewarea{
   text-align: center;
   margin-bottom: 1.5rem;
+  /* margin-left: 10%; */
 }
 
 .center{
@@ -46,6 +47,31 @@ body {
   margin-bottom: 0.5rem;
   margin-left: 10%;
   width: 80%;
+  font-size: 19px;
   background:rgba(255, 255, 255, 0.8);
 
+}
+
+.img_outer{
+    position: relative;
+    width: 70%; /* 領域の幅を指定 */
+    height: 40%; /* 領域の高さを指定 */
+    margin: 1em 0;
+    margin-left: 15%;
+    /* border: 1px solid #333; */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 画像に対して指定する class */
+.inner_photo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
 }
