@@ -11,6 +11,10 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
 
@@ -27,6 +31,10 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
 
@@ -43,6 +51,10 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
 
@@ -59,6 +71,10 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
 
@@ -75,6 +91,10 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
 
@@ -91,6 +111,10 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
 
@@ -107,5 +131,9 @@ $(function(){
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
+    $('#textExif').focus();
+    const focus = before.length + word.length;
+    console.log(focus);
+    document.getElementById('textExif').setSelectionRange(focus, focus);
   });
 });
