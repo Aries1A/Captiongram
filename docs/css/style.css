@@ -80,3 +80,8 @@ body {
   margin-bottom: 1em;
   margin-top: 1em;
 }
+
+textarea::-webkit-input-placeholder::after {
+ display: block;
+ content: "例： \A Date: [!Date] \A Camera: [!Camera] \A Lens: [!Lens] \A [!Length] [!Time] [!FNumber] [!ISO] \A  \A ＊[!Date]等は上のボタンをクリックすると入力できます";
+}
