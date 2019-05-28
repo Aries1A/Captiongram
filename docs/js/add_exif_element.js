@@ -7,7 +7,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!Date]';
+    const word     = '[!Date] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
@@ -27,7 +27,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!Camera]';
+    const word     = '[!Camera] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
@@ -47,7 +47,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!Lens]';
+    const word     = '[!Lens] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
@@ -67,7 +67,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!Length]';
+    const word     = '[!Length] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
@@ -87,7 +87,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!Time]';
+    const word     = '[!Time] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
@@ -107,7 +107,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!FNumber]';
+    const word     = '[!FNumber] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
@@ -127,7 +127,7 @@ $(function(){
     const pos      = textarea.selectionStart;
 
     const before   = sentence.substr(0, pos);
-    const word     = '[!ISO]';
+    const word     = '[!ISO] ';
     const after    = sentence.substr(pos, len);
     sentence = before + word + after;
     textarea.value = sentence;
