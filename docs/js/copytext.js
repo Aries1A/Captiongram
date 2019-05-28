@@ -1,4 +1,4 @@
-function copyToClipboard() {
+function copyToClipboard1() {
   var yourCode = document.getElementById('textExif1');
   var range = document.createRange();
   range.selectNode(yourCode);
@@ -8,8 +8,18 @@ function copyToClipboard() {
   alert('コピーしました');
 }
 
-function copyToClipboard() {
+function copyToClipboard2() {
   var yourCode = document.getElementById('textExif2');
+  var range = document.createRange();
+  range.selectNode(yourCode);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  alert('コピーしました');
+}
+
+function copyToClipboard() {
+  var yourCode = document.getElementById('textExif');
   var range = document.createRange();
   range.selectNode(yourCode);
   window.getSelection().removeAllRanges();

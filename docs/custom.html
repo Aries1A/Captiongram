@@ -1,0 +1,83 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Aries1A" />
+  <meta property="og:url" content="https://aries1a.github.io" />
+  <meta property="og:title" content="Captiongram" />
+  <meta property="og:description" content="instagramに載せる写真の撮影情報を自動で生成するWebサービス" />
+  <meta property="og:image" content="https://i.gyazo.com/ed654677dad2cf3a79386820f78e1418.png" />
+
+  <title>Captiongram</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- BootstrapのCSS読み込み -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- BootstrapのJS読み込み -->
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/copytext.js"></script>
+  <script src="js/getexif.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/add_exif_element.js"></script>
+  <!-- <script src="js/jquery-cookie/src/jquery.cookie.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/checkbox.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container" style="text-align: center;">
+      <h1 href="https://fontmeme.com/ja/font-instagram/"><img src="https://fontmeme.com/permalink/190527/3e413f7fd32e1894ed591821d59abccd.png" alt="font-instagram" border="0" width="60%"></h1>
+      <a class="btn-warning btn-lg" href="index.html" role="button">通常モードへ</a>
+
+
+      <div class="container" style="text-align: center;">
+
+        <div class="previewarea">
+          <div class="img_outer">
+            <img class="inner_photo" id="preview" width="80%" />
+          </div>
+        </div>
+
+        <div class="bottun">
+          <a class="btn-info btn-lg" id="Date" role="button">Date</a>
+          <a class="btn-info btn-lg" id="Camera" role="button">Camera</a>
+          <a class="btn-info btn-lg" id="Lens" role="button">Lens</a>
+          <a class="btn-info btn-lg" id="Length" role="button">Length</a>
+          <a class="btn-info btn-lg" id="Time" role="button">Time</a>
+          <a class="btn-info btn-lg" id="FNumber" role="button">F num</a>
+          <a class="btn-info btn-lg" id="ISO" role="button">ISO</a>
+
+        </div>
+
+        <div class="center">
+          <!--textExifに写真のExifを入れる  -->
+          <label>
+            <span class="btn btn-primary btn-lg">
+              写真を選択
+              <input type="file" style="display:none" id="file-input" accept="image/*">
+            </span>
+          </label>
+          <button class="btn btn-success btn-lg" type="button" id="caption2" disabled>
+            キャプションを表示
+          </button>
+
+
+          <div class="center">
+              <textarea placeholder="撮影情報のフォーマットを入力してください" rows=8 class="form-control textExif" id="textExif"></textarea>
+              <button class="btn btn-default btn-lg" type="button" onclick="copyToClipboard()" id="copyClipboard" disabled>
+                クリップボードにコピー
+              </button>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+
+</body>
+
+</html>
