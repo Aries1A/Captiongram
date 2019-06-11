@@ -48,12 +48,12 @@
           <!--textExifに写真のExifを入れる  -->
           <label>
             <span class="btn btn-primary btn-lg">
-              ①写真を選択
+              ① 写真を選択
               <input type="file" style="display:none" id="file-input" accept="image/*">
             </span>
           </label>
           <button class="btn btn-success btn-lg" type="button" id="caption2" disabled>
-            ③写真データを表示
+            ③ 写真データを表示
           </button>
 
           <div class="bottun">
@@ -68,10 +68,13 @@
           </div>
 
           <div class="center">
-            <textarea placeholder="②撮影情報のフォーマットを入力してください。上の各ボタンを押すと③で撮影データと置き換わる文字列を入力できます。"
+            <textarea placeholder="② 撮影情報のフォーマットを入力してください。上の各ボタンを押すと③で撮影データと置き換わる文字列を入力できます。"
             rows=8 class="form-control textExif" id="textExif"></textarea>
             <button class="btn btn-default btn-lg" type="button" onclick="copyToClipboard()" id="copyClipboard" disabled>
-              ④クリップボードにコピー
+              ④ クリップボードにコピー
+            </button>
+            <button class="btn btn-warning btn-lg" type="button" onclick="location.href='https://www.instagram.com/?hl=ja'">
+              ⑤ Instagramを開く
             </button>
           </div>
         </div>
